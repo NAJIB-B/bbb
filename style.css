@@ -183,15 +183,43 @@ body {
   border: none;
   width: 80%;
 }
-.section3img {
+.section3Card2 {
+  margin-top: 10rem;
+}
+.section3imgEdu {
   top: 0;
 
-  transform: translate(10px, -10%);
+  transform: translate(10px, -25%);
   width: 40rem;
   position: absolute;
 }
+.section3imgBoy {
+  top: 20%;
+
+  transform: translate(10px, -33%);
+  width: 40rem;
+  position: absolute;
+  height: 35rem;
+}
 .section3ImgDiv {
   position: relative;
+}
+#section4 {
+  background-color: rgb(5, 32, 143);
+  color: white;
+}
+.section4ImgDiv {
+  text-align: center;
+}
+#footer {
+  background-color: rgb(48, 47, 46);
+  color: white;
+}
+.footerList {
+  list-style-type: none;
+}
+.copyrightText {
+  text-align: center;
 }
 .otc {
   position: relative;
@@ -262,31 +290,41 @@ input[type="number"]:nth-child(n + 4) {
   white-space: nowrap !important;
 }
 
-@media screen and (max-width: 580px) {
-  .main {
+@media screen and (max-width: 1199px) {
+  .section3imgBoy {
+    width: 40rem;
     position: absolute;
-
-    top: 40%;
-    transform: translate(-40%, -50%);
     height: auto;
-    /* width: 80%; */
-
-    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(-10%, 0);
   }
-  .signUpEmail,
-  .signUpFirstName {
-    width: 14rem;
-  }
-  .signUpText {
-    font-size: 1rem;
-  }
-  body {
-    text-align: center;
-  }
-  .section3img {
-    width: 25rem;
+  .section3imgEdu {
+    width: 40rem;
     position: absolute;
-    transform: translate(-40%, 0);
+    height: auto;
+    transform: translate(-10%, 20%);
+  }
+  .section3ImgDiv {
+    position: relative;
+  }
+  .section3Card {
+    margin-top: 25rem;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section3imgBoy {
+    width: 30rem;
+    position: absolute;
+    height: auto;
+    transform: translate(-10%, 10%);
+  }
+  .section3imgEdu {
+    width: 30rem;
+    position: absolute;
+    height: auto;
+    transform: translate(-10%, 10%);
   }
   .section3ImgDiv {
     position: relative;
@@ -334,5 +372,71 @@ input[type="number"]:nth-child(n + 4) {
     left: 70%;
     top: 50%;
     z-index: -1;
+  }
+}
+@media screen and (max-width: 760px) {
+  .section3imgBoy {
+    width: 25rem;
+    position: absolute;
+    height: auto;
+    transform: translate(20%, 0);
+  }
+  .section3imgEdu {
+    width: 25rem;
+    position: absolute;
+    height: auto;
+    transform: translate(20%, 0);
+  }
+  .section3ImgDiv {
+    position: relative;
+  }
+  .section3Card {
+    margin-top: 25rem;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .main {
+    position: absolute;
+
+    top: 40%;
+    transform: translate(-40%, -50%);
+    height: auto;
+    /* width: 80%; */
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .signUpEmail,
+  .signUpFirstName {
+    width: 14rem;
+  }
+  .signUpText {
+    font-size: 1rem;
+  }
+  body {
+    text-align: center;
+  }
+  .section3imgBoy {
+    width: 25rem;
+    position: absolute;
+    height: auto;
+    transform: translate(-40%, 0);
+  }
+  .section3imgEdu {
+    width: 25rem;
+    position: absolute;
+    height: auto;
+    transform: translate(-40%, 0);
+  }
+  .section3ImgDiv {
+    position: relative;
+  }
+  .section3Card {
+    margin-top: 25rem;
+    border: none;
+    outline: none;
+    width: 100%;
   }
 }
